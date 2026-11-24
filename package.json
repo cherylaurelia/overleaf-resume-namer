@@ -1,0 +1,11 @@
+{
+  "name": "overleaf-resume-namer",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test test/",
+    "e2e": "node test/e2e.mjs",
+    "zip": "rm -f resume-namer.zip && cd extension && zip -qr ../resume-namer.zip . -x '.*'"
+  }
+}

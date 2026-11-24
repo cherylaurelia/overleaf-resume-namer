@@ -1,0 +1,20 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Resume Namer for Overleaf</title>
+<style>
+  body { font: 14px system-ui, sans-serif; margin: 16px; width: 320px; }
+  label { display: block; margin: 12px 0 4px; font-weight: 600; }
+  input[type=text] { width: 100%; box-sizing: border-box; padding: 6px; font: inherit; }
+  .row { display: flex; gap: 8px; align-items: center; margin-top: 12px; }
+  .hint { color: #666; font-size: 12px; margin-top: 4px; }
+  #status { color: #1a7f37; min-height: 1em; margin-top: 12px; }
+</style>
+<label for="fileName">Save my resume as</label>
+<input id="fileName" type="text" placeholder="Resume_FirstLast">
+<div class="hint">.pdf is added for you. The old file with this name is replaced.</div>
+<div class="row">
+  <input id="onlyResumes" type="checkbox">
+  <span>Only Overleaf projects with "resume" or "CV" in the name</span>
+</div>
+<div id="status"></div>
+<script type="module" src="options.js"></script>

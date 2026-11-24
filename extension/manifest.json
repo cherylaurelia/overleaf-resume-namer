@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "Resume Namer for Overleaf",
+  "version": "1.0.0",
+  "description": "Saves the resume PDF you download from Overleaf under one fixed name, replacing the previous copy.",
+  "permissions": ["downloads", "storage"],
+  "background": { "service_worker": "background.js", "type": "module" },
+  "options_ui": { "page": "options.html", "open_in_tab": false },
+  "action": { "default_title": "Resume Namer for Overleaf", "default_popup": "options.html" },
+  "icons": { "128": "icon128.png" }
+}
